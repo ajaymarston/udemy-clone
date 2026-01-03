@@ -122,11 +122,16 @@ body {
 
 #categories p {
     background-color: #953ed5;
+    border: solid #953ed5 1px;
     color: white;
     padding: 10px;
     border-radius: 50px;
-
-
+}
+#categories p:hover{
+    background:transparent;
+     border: solid #953ed5 1px;
+     color:black;
+     cursor:pointer;
 }
 
 #sale{
@@ -146,7 +151,21 @@ body {
     border-color: white;
     position: absolute;
     bottom:50px;
-   
+    animation-name:saleimg;
+    
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes saleimg{
+    0%{
+        transform: scale(0);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
 }
 #sale__offer:hover{
     cursor: pointer;
