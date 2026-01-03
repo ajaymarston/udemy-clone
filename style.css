@@ -15,11 +15,15 @@ body {
 
 #navbar {
     padding: 10px;
-    margin: 10px;
+
     display: flex;
     gap: 45px;
     border-bottom: solid black 1px;
     align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #one__title {
@@ -28,6 +32,7 @@ body {
 }
 
 #nav__2 {
+
     display: flex;
     gap: 20px;
     border: solid black 3px;
@@ -35,13 +40,15 @@ body {
     width: 200px border-radius:20px;
     padding: 10px;
     width: 60%;
-    border-radius: 30px
+    border-radius: 30px;
+
 }
 
 #nav__2 input {
     font-size: 16px;
     border: none;
     width: 100%;
+    background-color: transparent;
 }
 
 #nav__2 input:focus {
@@ -56,6 +63,48 @@ body {
     font-weight: bold;
     font-size: 16px;
 }
+
+.my__learning{
+    position:relative;
+    cursor: pointer;
+   
+}
+
+.my__learning__pop{
+ background-color: white;
+ border: solid black 1px;
+ z-index: 2;
+ padding: 5px;
+ width:100px;
+ position: absolute;
+ top:30px;
+ right: 0; 
+ display: none;
+}
+
+#my__learning{
+    position:relative;
+    cursor: pointer;
+   
+}
+
+#my__learning__pop{
+ background-color: white;
+ border: solid black 1px;
+ z-index: 2;
+ padding: 5px;
+ width:100px;
+ position: absolute;
+ top:30px;
+ right: 0; 
+ display: none;
+}
+
+#my__learning:hover #my__learning__pop {
+  display: block;
+}
+
+
 
 /*Categories*/
 
@@ -80,9 +129,28 @@ body {
 
 }
 
+#sale{
+    position: relative;
+}
 /*Sale Image*/
 #sale img {
     width: 100%
+}
+#sale__offer{
+    width:fit-content;
+    height:100px;
+    padding: 10px;
+    margin-left:5px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: white;
+    position: absolute;
+    bottom:50px;
+   
+}
+#sale__offer:hover{
+    cursor: pointer;
+    background-color:beige;
 }
 
 #rec {
@@ -142,39 +210,42 @@ body {
 
 }
 
-#popular{
-    padding:20px;
-    margin:20px;
-    
+#popular {
+    padding: 20px;
+    margin: 20px;
+
 }
 
-#popular__container{
-     display: flex;
+#popular__container {
+    display: flex;
     justify-content: space-around;
     margin-top: 10px;
     flex-wrap: wrap;
-   
+
 }
 
 /*Footer*/
-#footer{
-padding:20px;
-background-color: black;
-color: White;
+#footer {
+    padding: 20px;
+    background-color: black;
+    color: White;
 
 }
-#footer__one{
-    display:flex;
-    gap:10px;
-    
-    
+
+#footer__one {
+    display: flex;
+    gap: 10px;
+
+
 }
-#footer__two{
-    margin-left:10px;
+
+#footer__two {
+    margin-left: 10px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
-#footer__one p{
-    margin:10px;
+
+#footer__one p {
+    margin: 10px;
 }
